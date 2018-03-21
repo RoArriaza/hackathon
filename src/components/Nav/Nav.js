@@ -9,7 +9,7 @@ class Nav extends Component{
     return(
       <header>
         <nav className="mb-1 navbar navbar-expand-lg navbar-dark purple lighten-1">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <Link className="navbar-brand" to="/">Navbar</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-5" aria-controls="navbarSupportedContent-5" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -18,7 +18,9 @@ class Nav extends Component{
                 <li className="nav-item active">
                   <a className="nav-link waves-effect waves-light" href="#">Home <span className="sr-only">(current)</span></a>
                 </li>
-
+                <li className="nav-item">
+                  <Link className="nav-link waves-effect waves-light" to="create-event">Create an Event</Link>
+                </li>
                 <li className="nav-item">
                   <a className="nav-link waves-effect waves-light" href="#">Pricing</a>
                 </li>
