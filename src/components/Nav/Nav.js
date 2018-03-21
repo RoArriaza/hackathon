@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Nav extends Component{
   render(){
     return(
       <header>
         <nav className="mb-1 navbar navbar-expand-lg navbar-dark cyan">
-          <a className="navbar-brand" href="#">Navbar</a>
+          <Link className="navbar-brand" to="/">Navbar</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
