@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Login from './../firebase/Login'
+import Firebase from './../firebase/Firebase'
 import './Nav.css';
+
 class Nav extends Component{
   render(){
     return(
@@ -15,9 +18,7 @@ class Nav extends Component{
                 <li className="nav-item active">
                   <a className="nav-link waves-effect waves-light" href="#">Home <span className="sr-only">(current)</span></a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link waves-effect waves-light" href="#">Features</a>
-                </li>
+
                 <li className="nav-item">
                   <a className="nav-link waves-effect waves-light" href="#">Pricing</a>
                 </li>
@@ -33,7 +34,7 @@ class Nav extends Component{
               </ul>
               <ul className="navbar-nav ml-auto nav-flex-icons">
                 <li className="nav-item">
-                  <a className="nav-link waves-effect waves-light">1 <i className="fa fa-envelope"></i></a>
+                  <Login/>
                 </li>
                 <li className="nav-item avatar dropdown show">
                   <a className="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
