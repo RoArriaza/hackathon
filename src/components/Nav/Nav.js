@@ -13,7 +13,7 @@ class Nav extends Component{
             <div className="collapse navbar-collapse" id="navbarSupportedContent-5">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                  <a className="nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a className="nav-link waves-effect waves-light" href="#">Home <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link waves-effect waves-light" href="#">Features</a>
@@ -35,9 +35,9 @@ class Nav extends Component{
                 <li className="nav-item">
                   <a className="nav-link waves-effect waves-light">1 <i className="fa fa-envelope"></i></a>
                 </li>
-                <li class="nav-item avatar dropdown show">
+                <li className="nav-item avatar dropdown show">
                   <a className="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" class="img-fluid rounded-circle z-depth-0" alt="avatar image"/></a>
+                  <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg" className="img-fluid rounded-circle z-depth-0" alt="avatar image"/></a>
                   <div className="dropdown-menu dropdown-menu-right dropdown-purple" aria-labelledby="navbarDropdownMenuLink-5">
                     <a className="dropdown-item waves-effect waves-light" href="#">Action</a>
                     <a className="dropdown-item waves-effect waves-light" href="#">Another action</a>
