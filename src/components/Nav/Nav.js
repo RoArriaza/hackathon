@@ -13,10 +13,10 @@ class Nav extends Component{
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
                 <a className="nav-link waves-effect waves-light" href="#">
-                <i class="fa fa-envelope"></i> Contact <span className="sr-only">(current)</span></a>
+                <i className="fa fa-envelope"></i> Contact <span className="sr-only">(current)</span></a>
               </li>
               <li className="nav-item">
-                <a className="nav-link waves-effect waves-light" href="#"><i class="fa fa-gear"></i> Settings</a>
+                <a className="nav-link waves-effect waves-light" href="#"><i className="fa fa-gear"></i> Settings</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="fa fa-user"></i> Profile </a>
