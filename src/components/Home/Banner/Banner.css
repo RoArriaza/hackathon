@@ -5,4 +5,17 @@
   background-size: cover;
   background-position: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#banner h2 {
+  text-shadow: 3px 3px 0px rgba(255, 148, 26, 1);
+  font-weight: 800;
+}
+
+#banner button {
+  max-width: 150px;
 }
