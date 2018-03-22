@@ -3,7 +3,7 @@ import fire from './Firebase';
 
 var base = Rebase.createClass(fire.database());
 
-const submitData = (userId, picture, name, email, place, description, tags) => {
+const addEvent = (userId, picture, name, email, place, description, tags) => {
   picture = 'asdasda';
   name = 'Carmela';
   email = 'carmela@vienesalaciudad.cl';
@@ -27,4 +27,4 @@ const submitData = (userId, picture, name, email, place, description, tags) => {
   })
 }
 
-export default submitData;
+export default addEvent;
