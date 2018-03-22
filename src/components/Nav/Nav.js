@@ -8,7 +8,7 @@ class Nav extends Component{
   render(){
     return(
       <header>
-        <nav className="mb-1 navbar navbar-expand-lg navbar-dark purple lighten-1">
+        <nav className="mb-1 navbar navbar-expand-lg navbar-dark warning-color-dark lighten-1">
           <Link className="navbar-brand" to="/">Navbar</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-5" aria-controls="navbarSupportedContent-5" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
