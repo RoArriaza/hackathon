@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
 import './CardEvent.css';
 
-class CardEvent extends Component{  
+class CardEvent extends Component{
   render = () => {
     let superReturn = [];
     for (let i = 1; i <= 16; i++) {
@@ -30,7 +31,7 @@ class CardEvent extends Component{
         </ul>
       
       <CardBody>
-      <Button href="#">Share</Button><Button href="#">Join!</Button>
+      <Link className="waves-effect waves-light" to="/"><Button href="#">Join!</Button></Link><Link className="waves-effect waves-light" to="event-detail"><Button href="#">Detail</Button></Link>
 
       </CardBody>
       </Card>
