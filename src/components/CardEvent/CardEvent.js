@@ -19,9 +19,20 @@ class CardEvent extends Component{
           <CardImage className="img-fluid mx-auto" src={url} />
           <CardBody>
             <CardTitle>Evento Random</CardTitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button href="#">Button</Button>
+            <CardText>
+              Descripcion del Evento "holiholiratónconcoli"
+            </CardText>
         </CardBody>
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item">Capacidad <i class="fa fa-users" aria-hidden="true"></i></li>
+          <li className="list-group-item">Horario <i class="fa fa-clock-o" aria-hidden="true"></i></li>
+          <li className="list-group-item">Lugar <i class="fa fa-map-marker" aria-hidden="true"></i></li>
+        </ul>
+      
+      <CardBody>
+      <Button href="#">Share</Button><Button href="#">Join!</Button>
+
+      </CardBody>
       </Card>
     </div>
     )
