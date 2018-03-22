@@ -1,0 +1,10 @@
+
+.cardContainer{
+  display: inline-flex;
+  margin: 1em;
+}
+
+.card{
+  width: 18em;
+  display: inline-block;
+}
