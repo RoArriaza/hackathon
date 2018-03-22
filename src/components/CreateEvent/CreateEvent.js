@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Input } from 'mdbreact';
 import firebase from 'firebase';
+import { Button } from 'mdbreact';
+import submitData from './../firebase/Submit';
 
 class CreateEvent extends Component {
   constructor() {
@@ -28,6 +30,7 @@ class CreateEvent extends Component {
           <Input label="City, Country" icon="map-marker" group type="text" validate error="wrong" success="right"/>
           <Input type="textarea" label="Event Description" icon="pencil"/>
           <Input label="Event Tags" icon="tag" group type="email" validate error="wrong" success="right"/>
+          <Button color="warning" onClick={submitData(this.state.user.uid)}>Submit</Button>
         </form>
       </div>
       : 
