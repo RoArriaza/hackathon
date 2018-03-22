@@ -24,9 +24,9 @@ class CardEvent extends Component{
             </CardText>
         </CardBody>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item">Capacidad <i class="fa fa-users" aria-hidden="true"></i></li>
-          <li className="list-group-item">Horario <i class="fa fa-clock-o" aria-hidden="true"></i></li>
-          <li className="list-group-item">Lugar <i class="fa fa-map-marker" aria-hidden="true"></i></li>
+          <li className="list-group-item">Capacidad <i className="fa fa-users" aria-hidden="true"></i></li>
+          <li className="list-group-item">Horario <i className="fa fa-clock-o" aria-hidden="true"></i></li>
+          <li className="list-group-item">Lugar <i className="fa fa-map-marker" aria-hidden="true"></i></li>
         </ul>
       
       <CardBody>
