@@ -13,7 +13,7 @@ class CreateEvent extends Component {
   componentWillMount() {
     firebase.auth().onAuthStateChanged(user => {
       this.setState({ user });
-      console.log(this.state.user.email);
+      // console.log(this.state.user.email);
     })
   }
   render() {
