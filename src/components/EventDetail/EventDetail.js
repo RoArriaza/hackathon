@@ -46,7 +46,7 @@ class EventDetail extends Component {
           </CardText>
           <ul className="list-group list-group-flush">
           <li className="list-group-item text-muted">Creado por:</li>
-          <li className="list-group-item d-flex justify-content-between"><Button color="warning" href="#">Share</Button><Button color="warning" href="#">Anótame</Button></li>
+          <li className="list-group-item d-flex justify-content-between"><Button color="warning" target="_blank" href="https://twitter.com/home?status=He%20confirmado%20asistencia%20en%20%23JoinUs%20%23JoinMe%20%23Event%20%23Joy">Share<i class="fa fa-twitter"></i></Button><Button color="warning" href="#">Anótame</Button></li>
 
         </ul>
         </Card>
