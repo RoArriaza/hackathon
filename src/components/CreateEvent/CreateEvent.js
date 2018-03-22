@@ -22,8 +22,12 @@ class CreateEvent extends Component {
       <div id="create-event">
         <h2 className="mb-5">Create a new event</h2>
         <form>
-          <p className="h5 text-center mb-4">Write to us</p>
-          <Input label="Your name" icon="user" group type="email" validate error="wrong" success="right"/>
+          <Input label="Event Photo URL" icon="image" group type="text" validate error="wrong" success="right"/>
+          <Input label="Your name" icon="user" group type="text" validate error="wrong" success="right"/>
+          <Input label="Contact email" icon="envelope" group type="email" validate error="wrong" success="right"/>
+          <Input label="City, Country" icon="map-marker" group type="text" validate error="wrong" success="right"/>
+          <Input type="textarea" label="Event Description" icon="pencil"/>
+          <Input label="Event Tags" icon="tag" group type="email" validate error="wrong" success="right"/>
         </form>
       </div>
       : 
