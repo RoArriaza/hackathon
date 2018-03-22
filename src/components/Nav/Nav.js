@@ -16,7 +16,7 @@ class Nav extends Component{
             <div className="collapse navbar-collapse" id="navbarSupportedContent-5">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
-                  <a className="nav-link waves-effect waves-light" href="#">Home <span className="sr-only">(current)</span></a>
+                  <Link className="nav-link waves-effect waves-light" to="/">Home <span className="sr-only">(current)</span></Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link waves-effect waves-light" to="create-event">Create an Event</Link>
