@@ -46,7 +46,7 @@ class EventDetail extends Component {
           </CardText>
           <ul className="list-group list-group-flush">
           <li className="list-group-item text-muted">Creado por:</li>
-          <li className="list-group-item"><Button color="warning" href="#">Share</Button><Button color="warning" href="#">Anótame</Button></li>
+          <li className="list-group-item d-flex justify-content-between"><Button color="warning" href="#">Share</Button><Button color="warning" href="#">Anótame</Button></li>
 
         </ul>
         </Card>
