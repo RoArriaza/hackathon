@@ -18,11 +18,12 @@ class CreateEvent extends Component {
     const state = this.state;
     state[e.target.name] = e.target.value;
     this.setState(state);
-    console.log(this.state)
   }
   sendEvent(event) {
     event.preventDefault();
-    console.log(this.state);
+    this.state.eventTitle.length !== 0 && this.state.eventOwner.length !== 0 && this.state.eventContact.length !== 0
+    ? console.log(this.state)
+    : console.log('no hay ná');
   }
   render() {
     const { eventTitle, eventOwner, eventContact } = this.state;
