@@ -2,41 +2,37 @@ import React, { Component } from 'react';
 import { Input } from 'mdbreact';
 import firebase from 'firebase';
 import { Button } from 'mdbreact';
-import addEvent from './../firebase/AddEvent';
+// import addEvent from './../firebase/AddEvent';
 
 class CreateEvent extends Component {
   constructor() {
     super();
     this.state = {
-      user: null
+      eventTitle: '',
+      eventOwner: '',
+      eventContact: ''
     };
+    this.sendEvent = this.sendEvent.bind(this);
   }
-
-  componentWillMount() {
-    firebase.auth().onAuthStateChanged(user => {
-      this.setState({ user });
-      // console.log(this.state.user.email);
-    })
+  onChange = e => {
+    const state = this.state;
+    state[e.target.name] = e.target.value;
+    this.setState(state);
+    console.log(this.state)
+  }
+  sendEvent(event) {
+    event.preventDefault();
+    console.log(this.state);
   }
   render() {
+    const { eventTitle, eventOwner, eventContact } = this.state;
     return (
-      this.state.user !== null ?
-      <div id="create-event">
-        <h2 className="mb-5">Create a new event</h2>
-        <form>
-          <Input label="Event Photo URL" icon="image" group type="text" validate error="wrong" success="right"/>
-          <Input label="Your name" icon="user" group type="text" validate error="wrong" success="right"/>
-          <Input label="Contact email" icon="envelope" group type="email" validate error="wrong" success="right"/>
-          <Input label="City, Country" icon="map-marker" group type="text" validate error="wrong" success="right"/>
-          <Input type="textarea" label="Event Description" icon="pencil"/>
-          <Input label="Event Tags" icon="tag" group type="email" validate error="wrong" success="right"/>
-          <Button color="warning" onClick={addEvent(this.state.user.uid)}>Submit</Button>
-        </form>
-      </div>
-      : 
-      <div>
-        <p>Register first :v</p>
-      </div>
+      <form>
+        <Input type="text" name="eventTitle" value={eventTitle} onChange={this.onChange} label="Event Title"/>
+        <Input type="text" name="eventOwner" value={eventOwner} onChange={this.onChange} label="Your Name"/>
+        <Input type="email" name="eventContact" value={eventContact} onChange={this.onChange} label="Contact E-Mail" validate error="wrong" success="right" />
+        <Button type="submit" onClick={this.sendEvent}>Submit</Button>
+      </form>
     );
   }
 }
