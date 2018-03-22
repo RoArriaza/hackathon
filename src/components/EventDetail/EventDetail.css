@@ -1,0 +1,12 @@
+.detailCard{
+  width:80%;
+  margin: 0 10%;
+}
+
+.card-text{
+  padding: 1em;
+}
+
+span{
+  margin-left: -20em;
+}

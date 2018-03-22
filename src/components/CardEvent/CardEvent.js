@@ -31,7 +31,7 @@ class CardEvent extends Component{
         </ul>
       
       <CardBody>
-      <Link className="waves-effect waves-light" to="/"><Button href="#">Join!</Button></Link><Link className="waves-effect waves-light" to="event-detail"><Button href="#">Detail</Button></Link>
+      <Link className="waves-effect waves-light" to="/"><Button color="warning" href="#">Join!</Button></Link><Link className="waves-effect waves-light" to="event-detail"><Button color="warning" href="#">Detail</Button></Link>
 
       </CardBody>
       </Card>
