@@ -1,3 +1,7 @@
 .rounded-circle{
   height: 2em!important;
 }
+
+.navbar-toggler-icon {
+  margin-left: 0;
+}
