@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { Col, Container, Row, Footer } from 'mdbreact';
+import { Link } from 'react-router-dom';
 import'./Footer.css';
 
 class FooterPage extends React.Component {
@@ -11,7 +11,7 @@ class FooterPage extends React.Component {
           <Row>
             <Col md="12">
               <div className="mb-5 flex-center">
-              <a className="arrowIcon"><i className="fa fa-arrow-left mr-md-5 mr-3 fa-2x"></i><span>Go Back</span></a>
+              <Link className="arrowIcon" to="/"><i className="fa fa-arrow-left mr-md-5 mr-3 fa-2x"></i><span>Go Back</span></Link>
               </div>
             </Col>
           </Row>
