@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Input } from 'mdbreact';
 import firebase from 'firebase';
 import { Button } from 'mdbreact';
+import './CreateEvent.css';
 
 const createNewEvent = (userId, eventTitle, eventOwner, eventContact, eventDate, eventTime, eventPhoto, eventDescription, eventLocation, eventSpots) => {
   const database = firebase.database();
@@ -65,21 +66,24 @@ class CreateEvent extends Component {
   render() {
     const { eventTitle, eventOwner, eventContact, eventDate, eventTime, eventPhoto, eventDescription, eventLocation, eventSpots } = this.state;
     return (
-      this.state.user !== null ?
-      <form>
-        <Input type="text" name="eventTitle" value={eventTitle} onChange={this.onChange} label="Event Title"/>
-        <Input type="text" name="eventOwner" value={eventOwner} onChange={this.onChange} label="Your Name"/>
-        <Input type="text" name="eventLocation" value={eventLocation} onChange={this.onChange} label="Location"/>
-        <Input type="email" name="eventContact" value={eventContact} onChange={this.onChange} label="Contact E-Mail" validate error="wrong" success="right" />
-        <Input type="date" name="eventDate" value={eventDate} onChange={this.onChange}/>
-        <Input type="time" name="eventTime" value={eventTime} onChange={this.onChange}/>
-        <Input type="text" name="eventPhoto" value={eventPhoto} onChange={this.onChange} label="Event Picture"/>
-        <Input type="number" name="eventSpots" value={eventSpots} onChange={this.onChange} label="Available Spots"/>
-        <Input type="textarea" name="eventDescription" value={eventDescription} onChange={this.onChange} label="Event Description" icon="pencil"/>
-        <Button type="submit" onClick={this.sendEvent}>Submit</Button>
-      </form>
-      :
-      <p>Registeeer first!</p>
+      <div id="createEvent">
+        <h3>Create a New Event!</h3>
+        { this.state.user !== null ?
+        <form>
+          <Input type="text" name="eventTitle" value={eventTitle} onChange={this.onChange} label="Event Title"/>
+          <Input type="text" name="eventOwner" value={eventOwner} onChange={this.onChange} label="Your Name"/>
+          <Input type="text" name="eventLocation" value={eventLocation} onChange={this.onChange} label="Location"/>
+          <Input type="email" name="eventContact" value={eventContact} onChange={this.onChange} label="Contact E-Mail" validate error="wrong" success="right" />
+          <Input type="date" name="eventDate" value={eventDate} onChange={this.onChange}/>
+          <Input type="time" name="eventTime" value={eventTime} onChange={this.onChange}/>
+          <Input type="text" name="eventPhoto" value={eventPhoto} onChange={this.onChange} label="Event Picture"/>
+          <Input type="number" name="eventSpots" value={eventSpots} onChange={this.onChange} label="Available Spots"/>
+          <Input type="textarea" name="eventDescription" value={eventDescription} onChange={this.onChange} label="Event Description" icon="pencil"/>
+          <center><Button type="submit" onClick={this.sendEvent}>Submit</Button></center>
+        </form>
+        :
+        <p>Registeeer first!</p> }
+      </div>
     );
   }
 }

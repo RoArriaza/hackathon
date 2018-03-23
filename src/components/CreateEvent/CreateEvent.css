@@ -1,0 +1,13 @@
+#createEvent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+#createEvent form {
+  width: 50%;
+  min-width: 330px;
+}
