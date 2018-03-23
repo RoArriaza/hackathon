@@ -42,7 +42,7 @@ class navbar extends Component {
         <div>
           <img src={this.state.user.photoURL} alt={this.state.user.displayName} className="img-fluid rounded-circle z-depth-0" />
           <button className="App-btn warning-color-dark" onClick={this.handleLogout}>
-          <a className="nav-link waves-effect waves-light">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a></button>
+          <a className="nav-link waves-effect waves-light">Logout <i className="fa fa-sign-out" aria-hidden="true"></i></a></button>
         </div>
 
       );
@@ -50,7 +50,7 @@ class navbar extends Component {
     } else {
       return (
         <button className="App-btn warning-color-dark" onClick={this.handleAuth}>
-        <a className="nav-link waves-effect waves-light">Login With <i class="fa fa-google" aria-hidden="true"></i></a></button>
+        <a className="nav-link waves-effect waves-light">Login With <i className="fa fa-google" aria-hidden="true"></i></a></button>
       );
     }
   }
