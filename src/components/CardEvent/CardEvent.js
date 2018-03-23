@@ -42,34 +42,36 @@ class CardEvent extends Component {
   }
   render() {
     return (
-      <div className="cardContainer">
+    <div id="cardEvent">
       {
         this.state.data !== null ?
         this.state.data.map(item => {
           return item.map(subItem => {
             return (
-              <Card key={subItem.eventTitle}>
-                <CardImage className="img-fluid mx-auto" src={subItem.eventPhoto} />
-                <CardBody>
-                  <CardTitle>
-                    {subItem.eventTitle}
-                  </CardTitle>
-                  <CardText>
-                    {subItem.eventDescription.substring(0, 150) + '...'}
-                  </CardText>
-                </CardBody>
-                <ul className="list-group list-group-flush">
-                  <li className="list-group-item">Spots {subItem.eventSpots} <i className="fa fa-users" aria-hidden="true"></i></li>
-                  <li className="list-group-item">Time {subItem.eventTime} <i className="fa fa-clock-o" aria-hidden="true"></i></li>
-                  <li className="list-group-item">Place {subItem.eventLocation} <i className="fa fa-map-marker" aria-hidden="true"></i></li>
-                </ul>
-              </Card>
+              <div className="cardContainer" key={subItem.eventTitle}>
+                <Card>
+                  <CardImage className="img-fluid mx-auto" src={subItem.eventPhoto} />
+                  <CardBody>
+                    <CardTitle>
+                      {subItem.eventTitle}
+                    </CardTitle>
+                    <CardText>
+                      {subItem.eventDescription.substring(0, 150) + '...'}
+                    </CardText>
+                  </CardBody>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item">Spots {subItem.eventSpots} <i className="fa fa-users" aria-hidden="true"></i></li>
+                    <li className="list-group-item">Time {subItem.eventTime} <i className="fa fa-clock-o" aria-hidden="true"></i></li>
+                    <li className="list-group-item">Place {subItem.eventLocation} <i className="fa fa-map-marker" aria-hidden="true"></i></li>
+                  </ul>
+                </Card>
+              </div>
             )
           })
         })
         : <p>No hay ná</p>
       }
-      </div>
+    </div>
     );
   }
 }
