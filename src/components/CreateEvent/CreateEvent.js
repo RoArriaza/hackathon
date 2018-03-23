@@ -41,8 +41,10 @@ class CreateEvent extends Component {
       eventLocation: '',
       eventSpots: ''
     };
-    this.sendEvent = this.sendEvent.bind(this);
-    this.showData = this.showData.bind(this);
+    if (this.state.user !== null) {
+      this.sendEvent = this.sendEvent.bind(this);
+      this.showData = this.showData.bind(this);
+    }
   }
   componentWillMount() {
     firebase.auth().onAuthStateChanged(user => {
