@@ -32,9 +32,6 @@ class CardEvent extends Component {
         data: addToState
       });
     })
-    .then(() => {
-      console.log(this.state);
-    })
   }
   componentDidMount() {
     this.showData();
