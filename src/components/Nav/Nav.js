@@ -21,9 +21,6 @@ class Nav extends Component{
                 <li className="nav-item">
                   <Link className="nav-link waves-effect waves-light" to="create-event">Create an Event</Link>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link waves-effect waves-light" href="#">Pricing</a>
-                </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown 
                   </a>

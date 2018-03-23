@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import firebase from 'firebase';
+import './Login.css';
 
 class navbar extends Component {
 
@@ -39,14 +41,16 @@ class navbar extends Component {
       return (
         <div>
           <img src={this.state.user.photoURL} alt={this.state.user.displayName} className="img-fluid rounded-circle z-depth-0" />
-          <button outline color="secondary" className="App-btn warning" onClick={this.handleLogout}>Logout</button>
+          <button className="App-btn warning-color-dark" onClick={this.handleLogout}>
+          <a className="nav-link waves-effect waves-light">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a></button>
         </div>
 
       );
       //si el usuario no está logeado
     } else {
       return (
-        <button className="App-btn warning" onClick={this.handleAuth}> Login con Google </button>
+        <button className="App-btn warning-color-dark" onClick={this.handleAuth}>
+        <a className="nav-link waves-effect waves-light">Login With <i class="fa fa-google" aria-hidden="true"></i></a></button>
       );
     }
   }
