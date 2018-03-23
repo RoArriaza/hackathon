@@ -90,7 +90,7 @@ Los comentarios se entregaron al equipo de Front, para que realizaran los cambio
 Como último paso, queda pendiente el producto final. Hechas las correcciones desde el sketch, el prototipo y las observaciones de los usuarios en el testing. Además, de incorporar los requerimientos básicos del reto. El resultado, en su vista desktop es:
 
 
-![PantallasWeb]()
+![PantallasWeb](https://i.imgur.com/D5v6xyC.png)
 
 
 
