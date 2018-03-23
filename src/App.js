@@ -15,7 +15,7 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route exact path='/create-event' component={CreateEvent}/>
-          <Route exact path='/event-detail' component={EventDetail}/>
+          <Route exact path='/event-detail/:title' component={EventDetail}/>
         </Switch>
         <Footer/>
       </div>

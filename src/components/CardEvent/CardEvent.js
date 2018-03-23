@@ -5,7 +5,6 @@ import './CardEvent.css';
 import Rebase from 're-base';
 import firebase from 'firebase';
 
-const numbers = [1,2,3,4];
 
 class CardEvent extends Component {
   constructor() {
@@ -43,6 +42,8 @@ class CardEvent extends Component {
   render() {
     return (
     <div id="cardEvent">
+      <h3>Upcoming Events</h3>
+      <hr />
       {
         this.state.data !== null ?
         this.state.data.map(item => {
@@ -56,7 +57,7 @@ class CardEvent extends Component {
                       {subItem.eventTitle}
                     </CardTitle>
                     <CardText>
-                      {subItem.eventDescription.substring(0, 150) + '...'}
+                      {subItem.eventDescription.substring(0, 100) + '...'}
                     </CardText>
                   </CardBody>
                   <ul className="list-group list-group-flush">
@@ -64,6 +65,10 @@ class CardEvent extends Component {
                     <li className="list-group-item">Time {subItem.eventTime} <i className="fa fa-clock-o" aria-hidden="true"></i></li>
                     <li className="list-group-item">Place {subItem.eventLocation} <i className="fa fa-map-marker" aria-hidden="true"></i></li>
                   </ul>
+                  <CardBody>
+                    <Button color="warning"><Link className="waves-effect waves-light" to="/">Join!</Link></Button>
+                    <Button color="warning"><Link className="waves-effect waves-light" to={`event-detail/${subItem.eventTitle.replace(/ /g, '-')}`} data-title={subItem.eventTitle}>Detail</Link></Button>
+                  </CardBody>
                 </Card>
               </div>
             )

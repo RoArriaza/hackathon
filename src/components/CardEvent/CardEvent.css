@@ -1,3 +1,7 @@
+#cardEvent {
+  margin-top: 1em;
+  padding: 1em;
+}
 
 .cardContainer {
   display: inline-flex;
