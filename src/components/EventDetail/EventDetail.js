@@ -5,6 +5,7 @@ import Rebase from 're-base';
 import { Button, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
 import addEvent from './../firebase/AddEvent';
 import './EventDetail.css';
+import Loader from './../../images/grid.svg';
 
 class EventDetail extends Component {
   constructor() {
@@ -50,7 +51,7 @@ class EventDetail extends Component {
   }
   render() {
     return (
-      <div id="eventDetail mx-auto">
+      <div id="eventDetail" className="mx-auto">
         {
         this.state.data !== null ?
           <Card className='detailCard'>
@@ -78,7 +79,7 @@ class EventDetail extends Component {
 
           </ul>
           </Card>
-          : <p>loading...</p>
+          : <img src={Loader} alt="Loading"/>
           }
       </div>
     );

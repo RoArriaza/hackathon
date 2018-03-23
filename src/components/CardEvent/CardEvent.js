@@ -4,6 +4,7 @@ import { Button, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact
 import './CardEvent.css';
 import Rebase from 're-base';
 import firebase from 'firebase';
+import Loader from './../../images/grid.svg';
 
 
 class CardEvent extends Component {
@@ -71,7 +72,7 @@ class CardEvent extends Component {
             )
           })
         })
-        : <p>No hay ná</p>
+        : <img src={Loader} alt="Loading"/>
       }
     </div>
     );
