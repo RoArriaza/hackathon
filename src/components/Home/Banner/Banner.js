@@ -4,9 +4,8 @@ import { Button } from 'mdbreact';
 
 const Banner = () => {
   return (
-    <div id="banner">
+    <div id="banner" className="z-depth-1-half">
       <h2>Come Join Us!</h2>
-      <Button color="warning">Register</Button>
     </div>
   );
 };
