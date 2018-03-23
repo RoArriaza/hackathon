@@ -15,6 +15,9 @@ class CardEvent extends Component{
       console.log(data);
     })
   }
+  componentDidMount() {
+    this.showData();
+  }
   render = () => {
     let superReturn = [];
     for (let i = 1; i <= 16; i++) {
