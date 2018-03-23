@@ -1,7 +1,9 @@
 nav #main-logo {
   width: 40px;
 }
-
+nav.navbar.navbar-expand-lg.navbar-light.blue-grey.lighten-5 {
+  background-color: white!important;
+}
 .rounded-circle{
   height: 2em!important;
 }

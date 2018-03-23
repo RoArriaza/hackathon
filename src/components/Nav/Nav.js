@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom';
 import Login from './../firebase/Login';
 import Firebase from './../firebase/Firebase';
 import Logo from './../../images/logo.png';
+import Navbar from 'mdbreact';
 import './Nav.css';
 
 class Nav extends Component{
   render(){
     return(
       <header>
-        <nav className="mb-1 navbar navbar-expand-lg navbar-dark warning-color-dark lighten-1">
+        <nav className="navbar navbar-expand-lg navbar-light blue-grey lighten-5">
           <Link className="navbar-brand" to="/"><img id="main-logo" src={Logo} alt="Website Logo"/></Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-5" aria-controls="navbarSupportedContent-5" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -21,15 +22,6 @@ class Nav extends Component{
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link waves-effect waves-light" to="create-event">Create an Event</Link>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown 
-                  </a>
-                  <div className="dropdown-menu dropdown-purple" aria-labelledby="navbarDropdownMenuLink-5">
-                    <a className="dropdown-item waves-effect waves-light" href="#">Action</a>
-                    <a className="dropdown-item waves-effect waves-light" href="#">Another action</a>
-                    <a className="dropdown-item waves-effect waves-light" href="#">Something else here</a>
-                  </div>
                 </li>
               </ul>
               <ul className="navbar-nav ml-auto nav-flex-icons">
