@@ -2,8 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, CardBody, CardImage, CardTitle, CardText } from 'mdbreact';
 import './CardEvent.css';
+import Rebase from 're-base';
+import firebase from 'firebase';
 
 class CardEvent extends Component{
+  showData() {
+    var base = Rebase.createClass(firebase.database());
+    base.fetch('users', {
+      context: this,
+      asArray: true
+    }).then(data => {
+      console.log(data);
+    })
+  }
   render = () => {
     let superReturn = [];
     for (let i = 1; i <= 16; i++) {
